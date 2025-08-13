@@ -46,6 +46,7 @@ html body {
 
 #cover_image {
     max-width: 35%;
+    height: auto;
 }
 
 #intro {
