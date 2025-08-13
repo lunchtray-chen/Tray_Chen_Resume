@@ -11,6 +11,7 @@ html body {
 
 #links {
     display: flex;
+    padding-top: 20px;
     flex-direction: row;
     background-color: rgb(86, 113, 56);
     justify-content: center;
@@ -30,7 +31,7 @@ html body {
     gap: 5%;
     background-color: rgb(86, 113, 56);
     filter: drop-shadow(0px 15px 6px rgb(226, 203, 175));
-
+    transform: translateZ(0);
     /* filter: drop-shadow(0px 5px 10px rgb(207, 172, 111)) */
 }
 
@@ -204,7 +205,7 @@ html body {
    gap: 20px;
    /* border: 2px solid red; */
    filter: drop-shadow(0px 15px 6px rgb(226, 203, 175));
-
+   transform: translateZ(0);
 }
 
 #portfolio_title {
@@ -319,5 +320,6 @@ html body {
     width: clamp(350px, 60vw, 600px);
     height: auto;
     max-width: 100%;
-    filter: drop-shadow(30px 15px 4px rgb(226, 203, 175));
+    filter: drop-shadow(20px 15px 4px rgb(226, 203, 175));
+    transform: translateZ(0);
 }
