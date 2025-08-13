@@ -1,7 +1,7 @@
 html body {
     margin: 0px;
-    color: bisque;
-    background-color: bisque;
+    color: rgb(255, 234, 209);
+    background-color: rgb(255, 234, 209);
 }
 
 #website {
@@ -17,7 +17,7 @@ html body {
     align-items: center;
     gap: 20px;
     width: 100%;
-    filter: drop-shadow(0px 5px 5px rgb(65, 85, 41));
+    /* filter: drop-shadow(0px 5px 5px rgb(65, 85, 41)); */
 }
 
 .hero {
@@ -25,10 +25,12 @@ html body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     gap: 5%;
     background-color: rgb(86, 113, 56);
+    filter: drop-shadow(0px 15px 6px rgb(226, 203, 175));
+
     /* filter: drop-shadow(0px 5px 10px rgb(207, 172, 111)) */
 }
 
@@ -46,15 +48,17 @@ html body {
 }
 
 #intro {
-    font-size: 4vw;
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
+    font-size: clamp(18px,4vw,60px);
     font-weight: 700;
-    color: bisque;
+    color: rgb(255, 234, 209);
 }
 
 #bio {
-    font-size: 2vw;
+    font-size: clamp(14px,2vw,60px);
     font-weight: lighter;
-    color: bisque;
+    color: rgb(255, 234, 209);
 }
 
 
@@ -89,6 +93,7 @@ html body {
     flex-direction: row;
     justify-content: center;
     flex: 1;
+    gap: 30px;
     color: rgb(86, 113, 56);
     font-weight: bold;
 }
@@ -100,10 +105,12 @@ html body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
-    
 }
 
+.skill_txt {
+    font-size: clamp(14px,3vw,30px);
+    text-align: center;
+}
 
 .item {
     /* border: 1px solid blue; */
@@ -125,13 +132,6 @@ html body {
     width: 50%;
 }
 
-#Quantum_AI_title {
-    font-size: 5vw;
-}
-#Quantum_AI_bio {
-    font-size: 1.5vw;
-}
-
 #secondTF {
     display: flex;
     color: black;
@@ -146,12 +146,7 @@ html body {
     width: 50%;
 }
 
-#secondTF_title {
-    font-size: 5vw;
-}
-#secondTF_bio {
-    font-size: 1.5vw;
-}
+
 
 #Chiasma {
     display: flex;
@@ -167,12 +162,7 @@ html body {
     width: 50%;
 }
 
-#Chiasma_title {
-    font-size: 5vw;
-}
-#Chiasma_bio {
-    font-size: 1.5vw;
-}
+
 
 #Stanford {
     display: flex;
@@ -188,12 +178,6 @@ html body {
     width: 50%;
 }
 
-#Stanford_title {
-    font-size: 5vw;
-}
-#Stanford_bio {
-    font-size: 1.5vw;
-}
 
 
 
@@ -217,15 +201,123 @@ html body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 40px;
+   gap: 20px;
    /* border: 2px solid red; */
+   filter: drop-shadow(0px 15px 6px rgb(226, 203, 175));
+
 }
 
 #portfolio_title {
-    font-size: 8vw;
+    font-size: clamp(24px,8vw,60px);
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-weight: bold;
 }
 
 #portfolio_bio {
-    font-size: 2vw;
+    font-size: clamp(12px,4vw,30px);
+
+}
+
+#spicken {
+    margin-top: 70px;
+    color: rgb(86, 113, 56);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#spicken_title {
+    font-weight: bold;
+    text-align: center;
+}
+
+#spicken_bio {
+    max-width: 60%;
+    text-align: center;
+
+}
+
+#unihighyear {
+    margin-top: 50px;
+    color: rgb(86, 113, 56);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#uni_title {
+    font-weight: bold;
+    text-align: center;
+}
+
+#uni_bio {
+    max-width: 60%;
+    text-align: center;
+
+}
+
+#discodynamics {
+    margin-top: 50px;
+    color: rgb(86, 113, 56);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#dd_title {
+    font-weight: bold;
+    text-align: center;
+}
+
+#dd_bio {
+    max-width: 60%;
+    text-align: center;
+
+}
+
+.responsive-img {
+    width: clamp(150px, 20vw, 400px);
+    height: clamp(150px, 20vw, 400px);
+    max-width: 100%;
+    display: block;
+}
+
+.responsive-img-skills {
+    width: clamp(50px, 15vw, 100px);
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.responsive-img-photo {
+    width: clamp(150px, 25vw, 500px);
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.resum_title {
+    font-size: clamp(32px, 6vw, 60px);
+}
+
+.resum_txt {
+    font-size: clamp(14px, 2vw, 60px);
+}
+
+
+.portfolio {
+    width: clamp(350px, 60vw, 600px);
+    height: auto;
+    max-width: 100%;
+    filter: drop-shadow(30px 15px 4px rgb(226, 203, 175));
 }
